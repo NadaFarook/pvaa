@@ -1,0 +1,339 @@
+/*Nav css goes here*/
+* , *::before , *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Poppins', sans-serif;
+   font-size: 10px;
+   width: 100vw;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+.firstpage-img img{
+    vertical-align: unset;
+    border-style: none;
+    max-width: 130%;
+    padding: 9rem 5rem 5rem 0rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    top: 0;
+    left: 0;
+    background-color: #0e153a
+}
+section.hero{
+    display: grid;
+}
+
+.container{
+    width: 100%;
+    max-width: 200rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.menu-icons{
+    color: #000;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1500;
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid rgba(255,255,255, .1);
+}
+.logo{
+     width: 5rem;
+     height: 5rem;
+     
+     display: flex;
+     border-radius: 100%;
+     margin-right: 5rem;
+}
+.logo img{
+    margin: auto;
+    font-size: 3rem;
+    color: #eee;
+    width: 40px;
+    height: 40px;
+}
+.nav-list{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.nav-list li{
+    line-height: 8rem;
+    position: relative;
+} 
+.sub-menu li{
+    line-height: 4rem;
+}
+.nav-list a , h6{
+    display: block;
+    color: white;
+    padding: 0 1.5rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: color 650ms;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.nav-list a{
+    letter-spacing: unset;
+}
+.nav-list a:hover{
+    color: #22d1ee;
+}
+.move-right a{
+    color: #0e153a;
+}
+.btn{
+    padding: 0.8rem;
+    display: inline-block;
+    background-color: #22d1ee;
+    border: 2px solid #22d1ee ;
+    border-radius: 5rem;
+    transition: background-color 650ms;
+    color: #0e153a;
+    font-weight: 500;
+}
+.btn:hover{
+    color: #22d1ee;
+    background-color: rgba(0,0,0,0.2);
+}
+div.text a.btn:hover{
+    color: #22d1ee;
+}
+.sub-menu{
+    width: 20rem;
+    display: block;
+    position: absolute;
+    border-top: 3px solid #22d1ee ;
+    background-color: #191919;
+    z-index: 100;
+    top: 16rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 650ms ease;
+}
+
+.sub-menu::before{
+ content: "";
+ position: absolute;
+ top: -2.6rem;
+ left: 3rem;
+ border: 1.2rem solid transparent;
+ border-bottom-color: #22d1ee;
+}
+.nav-list li:hover > .sub-menu{
+    top: 8rem;
+    opacity: 1;
+    visibility: visible;
+}
+li.move-right{
+    margin: auto 0 auto auto;
+    line-height: initial;
+}
+
+@media screen and (max-width: 850px){
+    .firstpage-img img{
+        display: none;
+        visibility: hidden;
+    }
+    .container {
+        width: 100%;
+        max-width: 200rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+    .nav-list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        flex-direction: column;
+        background-color: #191919;
+        z-index: 1000;
+        align-items: initial;
+        display: none;
+        padding: 4rem 2rem 0;
+    }
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255,255,255, .1);
+    }
+    i{
+        color: white;
+    }
+    .nav-list li{
+        line-height: 6rem;
+    }
+    .sub-menu{
+        position: initial;
+        border: 3px solid transparent;
+        border-left-color: #22d1ee;
+        margin-left: 1rem;
+        max-height: 0;
+    }
+    .sub-menu::before{
+        display: none;
+    }
+    .nav-list li:hover > .sub-menu{
+        opacity: 1;
+        visibility: visible;
+        max-height: initial;
+    }
+    li.move-right{
+        margin: 0 auto;
+        line-height: initial;
+    }
+    .menu-icons{
+        display: block;
+        position: unset;
+        top: unset;
+        right: unset;
+        transform: unset;
+    }
+    .ion-md-close{
+        display: none;
+    }
+    nav.active .ion-md-close{
+        display: block;
+    }
+    nav.active .ion-md-menu{
+        display: none;
+    }
+    nav.active .nav-list{
+        display: flex;
+    }
+}
+/*End nav css*/
+
+/*Hero*/
+.hero{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(45deg, #283165, #00051f);
+    background-size: cover;
+    grid-template-columns: 50% 50%;
+}
+
+.text{
+  
+    color: #eee;
+    text-align: center;
+    margin: auto 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text h1{
+    font-size: 6rem;
+    margin: 2.5rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+    animation: ease-out 1s moveRight ;
+}
+
+.text h2{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    animation: ease-out 1s moveLeft ;
+}
+.text h3{
+    font-size: 20px;
+    color: #ffffffb3;
+    margin: 2rem auto 3rem auto;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    animation: ease-out 1s moveLeft ;
+}
+
+.text p{
+    font-size: 1.6rem;
+    margin-bottom: 5rem;
+}
+
+.text .btn{
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #0e153a;
+    text-transform: uppercase;
+    animation: ease-out 1s moveUp ;
+
+}
+
+@media screen and (max-width: 830px){
+    .text h1{
+        font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    }
+
+    .text .btn{
+        font-size: 1.2rem;
+    }
+    section.hero {
+        display: block;
+        padding: 7rem 3rem;
+    }
+}
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveUp{
+    0%{
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

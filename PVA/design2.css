@@ -1,0 +1,201 @@
+
+
+.page2{
+    height: 75vh;
+    background-image: linear-gradient(135deg,#1a224dd4 ,#00051f), url(./marvin-meyer-SYTO3xs06fU-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    color: white;
+    padding: 7rem 5rem;
+}
+.card1 {
+    padding: 1rem;
+    width: 250px;
+    display: flex;
+}
+.card1 img{
+    width: 60px;
+    height: 60px;
+    align-self: auto;
+    margin: 10px 10px 0 0;
+    background-color: #10163b;
+    border-radius: 100%;
+    border: 10px solid #10163b;
+    transition: 1s ease;
+    width: 40px;
+    height: 40px;
+}
+.textcard h1{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 500;
+    animation: moveRight 2s ease;
+}
+.textcard p {
+    font-size: 16px;
+    font-weight: 100;
+}
+.card1 img:hover{
+    background-color: #22d1ee;
+    border: 10px solid #22d1ee;
+}
+.divs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.page2 .head-text{
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+}
+.head-text h3{
+    font-size: 30px;
+    color: #22d1ee;
+    font-weight: 500;
+}
+.head-text h1{
+    color: #e2f3f5;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 200;
+}footer{
+    background-color: #080d24;
+      display: flex;
+      justify-content: space-around;
+      padding: 4rem 2rem;
+      height: 150px;
+      font-family:'Montserrat', sans-serif;
+  }
+  .hov{
+    margin: 5px
+  }
+  .footerbox1{
+    display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .social-icons{
+    display: flex;
+    justify-content: space-between;
+  }
+  .footerbox2 , .footerbox3{
+    display: flex;
+      flex-direction: column;
+      color: white;
+      justify-content: space-between;
+  }
+  .footerbox2 h6:hover , .footerbox3 h6:hover{
+      color: #22d1ee ;
+  }
+  
+  .footerbox4{
+    display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+  .btn{
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    transition: color 650ms;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .footerbox4 .btn{
+      padding: 8px 20px;
+  }
+ 
+  .footerbox4 p{
+    color:white;
+  }
+  .hov:hover{
+    filter: invert(63%) sepia(66%) saturate(893%) hue-rotate(153deg) brightness(93%) contrast(83%);
+  }
+  img.srcimg{
+    width: 40px;
+    align-self: center;
+    margin-bottom: 1rem;
+  }
+
+@media screen and (max-width: 850px){
+    .page2{
+        height: unset;
+        padding: 8rem 3rem 5rem;
+    }
+    .card1 img{
+        width: 40px;
+        height: 40px;
+       }
+    .textcard h1{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .textcard p {
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .divs{flex-direction: column;}
+  
+    .head-text h3{
+        font-size: 20px;
+      }
+    .head-text h1{
+        font-size: 25px;
+       }
+       footer{
+        height: auto;
+        flex-direction: column;
+      align-items: unset;
+    }
+    .footerbox1{
+        justify-content: unset;
+        padding: 0rem 3rem 2rem;
+    }
+    .srcimg{
+      display: none;
+    }
+    .footerbox2 , .footerbox3{
+        align-items: center;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    h6{
+      padding-bottom: 1rem;
+    }
+    .footerbox4 button{
+      align-self: center;
+      margin: 1.5rem;
+    }
+    .footerbox4 p{
+      align-self: center;
+    }
+}
+
+
+
+
+
+@keyframes moveRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}

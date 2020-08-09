@@ -1,0 +1,395 @@
+/*use this design file for your css*/
+section.page3 {
+    background: #0e153a;
+    padding: 6rem 12rem;
+}
+.module{
+    background-color: #192047;
+    width: 400px;
+    margin: auto;
+    height: 250px;
+    border-radius: 10px;
+    padding: 3rem;
+    border-top: 7px solid #38afd4;
+}
+.page3 h5{
+    font-size: 20px;
+    color: #22d1ee;
+    background-color: #69eaff38;
+    font-weight: 100;
+    width: fit-content;
+    padding: 5px 10px;
+}
+.page3 h2{
+    color: ghostwhite;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: 3rem 0;
+    font-weight: 200;
+}
+.module h3{
+    font-size: 20px;
+    color: #22d1ee;
+    background-color: #69eaff38;
+    font-weight: 200;
+    width: fit-content;
+    padding: 5px 20px;
+}
+.module h1{
+    text-transform: uppercase;
+    padding: 10px 00px;
+    font-size: 20px;
+    color: #38afd4;
+}
+.module p{
+    font-size: 15px;
+    color: #ffffff7d;
+}
+.all-mods{
+    display: grid;
+    grid-template-rows:185px 185px 185px 185px 100px;
+    grid-template-columns: 50% 50%;
+}
+.mod1{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+.mod2{
+    grid-row: 2/3;
+    grid-column:2/3 ;
+}
+.mod3{
+    grid-row: 3/4;
+    grid-column:1/2 ;
+}
+.mod4{
+    grid-row: 4/5;
+    grid-column:2/3 ;
+}
+.mod5{
+    grid-row:5/6 ;
+    grid-column: 1/3;
+    height: 100px;
+    background-color: none;
+    color: white;
+    font-size: 25px;
+    
+}
+.mod5 h3{
+   
+    color: white;
+    font-weight: 600;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 5px 35px;
+    text-align: center;
+    color: #73deff;
+    border: 3px solid #37add2;
+    border-radius: 10px;
+    font-weight: 200;
+    font-weight: 22px;
+    width: fit-content;
+}
+
+.module h3{
+    border: 3px solid #38afd4;
+    background-color: #ff00ff00;
+    border-radius: 10px;
+}
+@media screen and (max-width: 850px){
+    .all-mods{
+        display: unset;
+    }
+    section.page3{
+        padding: 5rem 3rem;
+    }
+    .page3 h2{
+        font-size: 20px;
+        padding: 3rem 0;
+    font-weight: 200;
+    }
+    .module{
+        width: 250px;
+        margin: auto;
+        margin-bottom: 3rem;
+        height: unset;
+        padding: 2rem 1rem;
+    }
+    .module h3{
+        border: 2px solid #38afd4;
+    background-color: #ff00ff00;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #22d1ee;
+    
+    font-weight: 200;
+    width: fit-content;
+    padding: 3px 20px;
+    margin: 1rem 0;
+    }
+    .module h1{
+        text-transform: uppercase;
+    padding: 10px 00px;
+    font-size: 20px;
+    color: #38afd4;
+    font-weight: 200;
+    }
+    .module p{
+        font-size: 13px;
+    color: #ffffff7d;
+    font-weight: 100;
+    }
+    .mod5 h3{
+        margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 35px;
+    text-align: center;
+    color: #37add2;
+    border: 3px solid #37add2;
+    border-radius: 10px;
+    font-weight: 200;
+    font-weight: 22px;
+    width: fit-content;
+    font-size: 15px;
+    background-color: #38afd4;
+    color: #0e153a;
+    font-weight: 600;
+    }
+}
+
+
+.c-no{height:150px;}
+.grey-bg{background:#ebebeb;}
+.counter-Txt{
+    text-align: center;
+    font-size: 20px;
+    border: 2px dashed #6acef0;
+    padding: 1rem 3rem;
+    display: flex;
+    width: 220px;
+    height: fit-content;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background-color: #00000038;
+}
+.counter-Txt span{display:block; font-size:36px;color: white;}
+.container-fluid{
+    background-color: #0e153a;
+    background-image: linear-gradient(45deg , #022456d9 , #060d33 ) , url(./patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    padding: 9rem 2rem;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.fa-3x{
+    color: #6acef0;
+    align-self: center;
+}
+.mm{
+    color: white;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    margin: auto;
+}
+
+
+
+
+
+
+@media(min-width:320px) and (max-width:767px){ 
+.c-no{height:100%;}
+.counter-Txt{margin-top:35px;}
+.row{
+    flex-direction: column;
+    align-items: center;
+}
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel-item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 290px;
+}
+.carousel .item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #db584e;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.containerr{
+    background-image: linear-gradient(45deg, #283165, #00051f);
+}
+.containerr .row{
+    margin: unset;
+}
+.containerr h2{
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 3rem auto;
+    padding: 5px;
+    text-align: center;
+    border-bottom: 2px solid #6acef000;
+    width: fit-content;
+    transition: 2s ease-out;
+}
+.containerr h2:hover{
+    border-bottom: 2px solid #6acef0;
+}
+.carousel .overview b {
+    text-transform: uppercase;
+    color: #6acef0;
+}
+.carousel-control i {
+    color: #57d4ff;
+    text-shadow: unset;
+}
+section.portfolio-pg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transform-style: preserve-3d;
+    width: 1100px;
+}
+section .card{
+    position: relative;
+    width: 320px;
+    height: 320px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+section .card .box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+}
+section .card:hover .box{
+    transform: rotateY(180deg);
+}
+
+section .card .box .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+section .card .box .imgBx img{
+    position: absolute;
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border: 5px solid white;
+    padding: 1rem;
+    
+}
+section .card .box .contentBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border: 1px solid beige;
+    backface-visibility: hidden;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transform-style: preserve-3d;
+    transform: rotateY(180deg);
+}
+section .card .box .contentBx div{
+    transform-style: preserve-3d;
+    padding: 20px;
+    background-image:linear-gradient(45deg ,#363553,
+    #903775,
+    #E8458b);
+    transform: translateZ(100px);
+}
+section .card .box .contentBx div h1{
+    color: #fff;
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+section .card .box .contentBx div p{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
